@@ -1,0 +1,72 @@
+.intro-container {
+  margin: 40px 0; /* Correct syntax */
+  overflow: hidden;
+}
+
+/* ✅ Row alignment — centers vertically, keeps column layout responsive */
+.intro-container .row {
+  align-items: center;
+}
+
+/* ✅ Image container: image slightly left and down */
+.img-container {
+  display: flex;
+  justify-content: flex-start; /* Moves image to the left */
+  align-items: center;
+  padding-left: 30px; /* Adds a bit of left spacing */
+}
+
+.hos-image {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px gray;
+  transform: translateY(20px); /* Moves image slightly downward */
+}
+
+/* ❌ This selector was wrong — it was targeting an intro-container inside another intro-container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ✅ Headings */
+.info-container h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.info-container p {
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* ✅ Button styling */
+.info-container .btn {
+  width: fit-content;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+/* ✅ Responsive: center image on small screens */
+@media (max-width: 768px) {
+  .img-container {
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .hos-image {
+    width: 90%;
+    transform: translateY(0); /* reset downward shift on mobile */
+  }
+
+  .info-container {
+    text-align: center;
+    align-items: center;
+  }
+}

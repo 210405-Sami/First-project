@@ -1,0 +1,88 @@
+.doc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper for all doctor cards */
+.doctors-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Default card look */
+.doc-container .card {
+  width: 10rem;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect */
+.doc-container .card:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+/* Blue highlight on click */
+.doc-container .card.selected-blue {
+  background-color: #e0f0ff;
+  border-color: #007bff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Center and round the image */
+.doc-container img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+/* Link style */
+.doc-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Card text */
+.doc-container .card-body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Bold name */
+.doc-container h6 {
+  font-weight: bold;
+}
+
+/* Icon style (dentist tooth logo) */
+.doc-container .card-footer i {
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.docinfo-container h6{
+  font-weight: bold;
+}
+
+.docinfo-container .card-footer{
+  width:100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.calender{
+  cursor:pointer;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid teal;
+  background-color: rgb(249,250,172);
+}

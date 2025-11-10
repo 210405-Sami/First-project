@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "name":"john Doe",
+        "speciality":"Dentist",
+        "pic":"https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png",
+        "degree":"MD n Dental",
+        "about":"lorem50",
+        "experience":1,
+        "available":true,
+        "fee":300,
+        "icon":"fa-solid fa-teeth"
+    }
+]
